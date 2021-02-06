@@ -1,9 +1,14 @@
-p{
-    color: red;
-}
-h1{
-    color: greenyellow;
-}
-a{
+a.atag:visited{
     color: blue;
+}
+
+body{
+    counter-reset: man;
+}
+
+
+  
+h3::before{
+    counter-increment: man;                   /* Increment the value of section counter by 1 */
+    content: "crush " counter(man) ": ";
 }
